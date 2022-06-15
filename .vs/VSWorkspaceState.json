@@ -1,7 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\assets",
+    "\\assets\\css",
+    "\\assets\\images",
+    "\\assets\\js",
+    "\\styles"
   ],
-  "SelectedNode": "\\C:\\Users\\piroi16\\Documents\\GitHub\\erc20-asset-generator",
+  "SelectedNode": "\\assets\\js\\web3.min.js",
   "PreviewInSolutionExplorer": false
 }
