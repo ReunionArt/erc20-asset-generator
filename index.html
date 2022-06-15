@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>ERC20 Asset Generator</title>
+    <title>RICL Ethereum token générateur </title>
     <!--CDN for Bootstrap 4-->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!--CDN for Animation-->
@@ -20,16 +20,16 @@
 <div class="container-first">
     <div class="row wrap-form animated fadeInDown">
         <div class="col-12 align-self-end hide" id="metamask-locked">
-            <i class="material-icons metamask-span">lock</i>
-            <span class="metamask-text">Metamask Locked</span>
+            <i class="material-icons metamask-span">Bloquer</i>
+            <span class="metamask-text">Metamask Bloqué</span>
         </div>
         <div class="col-12 align-self-end hide" id="metamask-unlocked">
-            <i class="material-icons metamask-span">lock_open</i>
-            <span class="metamask-text">Metamask Unlocked</span>
+            <i class="material-icons metamask-span">Serrure Ouverte</i>
+            <span class="metamask-text">Metamask Dévérouillé</span>
         </div>
         <!--Asset Generator Form-->
         <div class="col-12 align-self-center">
-            <p class="heading" align="center">ERC20 Asset Generator</p>
+            <p class="heading" align="center">RICL Ethereum token générateur</p>
             <!--Content to be Displayed when metamask is not available-->
             <p class="content" id="metamask-status"></p>
             <!--When you are connected to mainnet-->
@@ -39,25 +39,25 @@
         <div class="col-12 align-self-center">
             <form id="asset-form">
                 <div class="form-group">
-                    <input type="text" class="form-control" id="name" placeholder="Name" required><a href="#asset-name"><i
+                    <input type="text" class="form-control" id="name" placeholder="Nom" required><a href="#asset-name"><i
                         id="info-name" class="material-icons info">info</i></a>
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" id="symbol" placeholder="Symbol" required><a
+                    <input type="text" class="form-control" id="symbol" placeholder="Symbole" required><a
                         href="#asset-symbol"><i id="info-symbol" class="material-icons info">info</i></a>
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" maxlength="2" id="decimals" placeholder="Decimals" required>
+                    <input type="text" class="form-control" maxlength="2" id="decimals" placeholder="Decimales" required>
                     <a href="#asset-decimal"><i id="info-decimal" class="material-icons info">info</i></a>
                     <span class="error-msg" id="decimals-error-msg"></span>
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" id="total-supply" placeholder="Total Supply " required>
+                    <input type="text" class="form-control" id="total-supply" placeholder="Offre Totale " required>
                     <a href="#asset-supply"><i id="info-supply" class="material-icons info">info</i></a>
                     <span class="error-msg" id="total-supply-error-msg"></span>
                 </div>
                 <div class="form-group">
-                    <button align="center" class="submit-button btn btn-primary" id="submit-btn" type="submit">Submit
+                    <button align="center" class="submit-button btn btn-primary" id="submit-btn" type="submit">Soumettre
                     </button>
                 </div>
             </form>
@@ -70,31 +70,31 @@
 <div class="container-second">
     <div class="row info-content">
         <ul class="list-group list-group-flush" id="list-group">
-            <li class="list-group-item animated fadeInUp" id="asset-name"> • <span class="info-heading">NAME : </span>
-                <p class="info-main">Name is simply what you want to call your token, such as Bitcoin or Ethereum.</p>
+            <li class="list-group-item animated fadeInUp" id="asset-name"> • <span class="info-heading">NOM : </span>
+                <p class="info-main">Le nom est simplement le nom que vous voulez donner à votre jeton, comme Bitcoin ou Ethereum.</p>
             </li>
             <li class="list-group-item animated fadeInUp" id="asset-symbol"> • <span
-                    class="info-heading">SYMBOL : </span>
-                <p class="info-main">Symbol will be the ticker of your token, such as BTC or ETC (normally tokens have a
-                    3 letter uppercase symbol).</p></li>
+                    class="info-heading">SYMBOLE : </span>
+                <p class="info-main">Le symbole sera le ticket de votre jeton, tel que BTC ou ETC (normalement les jetons ont un
+                     symbole de 3 lettres majuscules).</p></li>
             <li class="list-group-item animated fadeInUp" id="asset-decimal"> • <span
-                    class="info-heading">DECIMAL :  </span>
-                <p class="info-main">Decimals is how many decimal places your token can have, which determines how
-                    divisible it is. Generally tokens will have 18 decimals, which allows 1 token to be divided into
-                    trillions of pieces (eg. with 18 decimals you could have as little as 0.000000000000000001 of a
-                    token).</p></li>
+                    class="info-heading">DECIMALES :  </span>
+                <p class="info-main">Décimales est le nombre de décimales que votre jeton peut avoir, ce qui détermine comment
+                     elle est divisible. Généralement, les jetons auront 18 décimales, ce qui permet de diviser 1 jeton en
+                     trillions de pièces (par exemple, avec 18 décimales, vous pourriez avoir aussi peu que 0,000000000000000001 d'un
+                     jeton).</p></li>
             <li class="list-group-item animated fadeInUp" id="asset-supply"> • <span
-                    class="info-heading">TOTAL SUPPLY : </span>
-                <p class="info-main">Total Supply will be number of tokens available. Token Total Supply <strong>VALUE</strong>
-                    will be total number of tokens to the power of decimal places. (eg. if total supply is 1000 and
-                    decimals is 18 then give 1000000000000000000000 as a value.)</p></li>
+                    class="info-heading">OFFRE TOTALE : </span>
+                <p class="info-main">L'offre totale sera le nombre de jetons disponibles. Offre totale de jetons <strong>VALEUR</strong>
+                     sera le nombre total de jetons à la puissance des décimales. (par exemple, si l'offre totale est de 1000 et
+                     décimales est 18 alors donnez 1000000000000000000000 comme valeur.)</p></li>
         </ul>
     </div>
 </div>
 <!--Section for Info Message ends-->
 <div class="container-third">
     <div class="row copyright-row">
-        <p class="copyright">© EthOrbit 2018. All Rights Reserved.</p>
+        <p class="copyright">© Reunion Island Crypto Lab 2022. All Rights Reserved.</p>
     </div>
 </div>
 
