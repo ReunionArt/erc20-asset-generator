@@ -1,5 +1,5 @@
 npm{
-  "name": "erc20-asset-generator",
+  "name": "RICL Ethereum token générateur",
   "private": false,
   "version": "0.0.1",
   "description": "An ethereum ERC20 token creator, issue your own token on ethereum with just a few clicks",
@@ -18,7 +18,7 @@ npm{
     "url": "https://github.com/sthnaqvi/erc20-asset-generator/issues"
   },
   "homepage": "https://github.com/sthnaqvi/erc20-asset-generator#readme",
-  "author": "Sayed Tauseef Naqvi <tauseef.naqvi786@gmail.com>",
+  "author": "Reunion Island Crypto Lab",
   "license": "MIT",
   "keywords": [
     "ethereum",
